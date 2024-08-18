@@ -35,3 +35,8 @@ ggplot(data = sem_intro, aes(x = year, y= semester))+
 #1. 女子学生比率
 #2. 白人学生割合
 #3. 学費(instatetuition)
+
+#(b) 回帰分析
+#1. 以下の式を推定し、表にまとめなさい。
+model <- lm(tot_grad_rate ~ semester, data = master_data_new) 
+summary(model)
